@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+
+body {
+  background: rgb(0, 0, 0);
+  font-family: "Share Tech Mono", monospace;
+  letter-spacing: 1.5px;
+  color: #fafafa;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.66em;
+  padding-top: 56px;
+
+  .body-matte {
+    position: fixed;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(70%) contrast(60%);
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  color: #fcf700;
+  letter-spacing: unset;
+}
+
+/*----- Header -----*/
+
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  background: black;
+}
+
+.navbar-brand {
+  color: #fcf700 !important;
+  text-transform: uppercase;
+
+  background: linear-gradient(currentColor 0 0) 0 0,
+    linear-gradient(currentColor 0 0) 0 0,
+    linear-gradient(currentColor 0 0) 0 100%,
+    linear-gradient(currentColor 0 0) 0 100%,
+    linear-gradient(currentColor 0 0) 100% 0,
+    linear-gradient(currentColor 0 0) 100% 0,
+    linear-gradient(currentColor 0 0) 100% 100%,
+    linear-gradient(currentColor 0 0) 100% 100%;
+  background-size: var(--d, 0) 3px, 3px var(--d, 0);
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  --d: 10px;
+  padding: 5px 10px;
+}
+
+.navbar-collapse {
+  padding: 25px 0 75px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: white !important;
+}
+
+.navbar-toggler {
+  width: 55px;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.logo-desktop {
+  width: 150px;
+  height: auto;
+  margin: 0 20px;
+}
+
+.logo-mobile {
+  width: 100px;
+  height: auto;
+}
+
+/*----- Main Page Carousel -----*/
+
+.home-carousel {
+  position: relative;
+
+  .triangle-bottom {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+  }
+
+  .carousel-item {
+    img {
+      height: 350px;
+      object-fit: cover;
+      object-position: center;
+      filter: grayscale(80%) contrast(100%);
+    }
+  }
+}
+
+/*----- Black Section -----*/
+
+.black-section {
+
+  background: black;
+}
+
+.bs-callout {
+  font-weight: bolder;
+  font-size: 60px;
+  line-height: 0.9;
+
+  span {
+    font-weight: 300;
+    font-size: 36px;
+  }
+}
+
+/*----- Transparent Section -----*/
+
+.transparent-section {
+
+  .custom-box-top {    
+
+    .grappling {
+      color: #fafafa;
+      font-size: 36px;
+    }
+
+    .circle {
+      font-size: 50px;
+    }
+
+  }
+
+  .custom-box {
+    width: 100%;
+    background: -webkit-linear-gradient(left, #ef5241 0%, #df2674 100%);
+    background: linear-gradient(to right, #ef5241 0%, #df2674 100%);
+    padding: 20px;
+  }
+
+  .ts-text {
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+
+}
+
+
+/*----- Second Black Section -----*/
+
+.second-black-section {
+  background: black;
+
+  .stefan-strong {
+    font-size: 36px;
+
+  }
+}
+
+/*----- Gradiant Section -----*/
+
+.grad-section {
+  background: #fb6c43;
+  background: -moz-linear-gradient(top, #fb6c43 0%, #fc136a 100%);
+  background: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      color-stop(0%, #fb6c43),
+      color-stop(100%, #fc136a));
+  background: -webkit-linear-gradient(top, #fb6c43 0%, #fc136a 100%);
+  background: -o-linear-gradient(top, #fb6c43 0%, #fc136a 100%);
+  background: -ms-linear-gradient(top, #fb6c43 0%, #fc136a 100%);
+  background: linear-gradient(to bottom, #fb6c43 0%, #fc136a 100%);
+
+  a {
+    text-decoration: none;
+    color: #fafafa;
+  }
+
+
+
+
+}
+
+.triangle-bottom {
+  position: relative;
+  bottom: -1px;
+}
+
+.triangle-top {
+  position: relative;
+  top: -1px;
+}
+
+.icon {
+  width: 20px;
+}
+
+
+
+/*----- Footer -----*/
+
+footer {
+  background: #000;
+
+}
+
+/*----- Media Queries -----*/
+
+@media only screen and (min-width: 992px) {
+
+
+
+  .nav-link {
+    padding: 4px 12px;
+    margin: 0 8px;
+    position: relative;
+
+    &::before,
+    &::after {
+      z-index: 2;
+      content: "";
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 10px;
+    }
+
+    &::before {
+      top: 0;
+      right: 0;
+      border-style: solid;
+      border-width: 0 10px 10px 0;
+      border-color: transparent black transparent transparent;
+    }
+
+    &::after {
+      bottom: 0;
+      left: 0;
+      border-style: solid;
+      border-width: 10px 0 0 10px;
+      border-color: transparent transparent transparent black;
+    }
+  }
+
+  .navbar-collapse {
+    padding: 0;
+  }
+
+  .thick-2 {
+    background: linear-gradient(#fcf700 0 0) 50% calc(-3px - 100%) / var(--d, 0%) 200% no-repeat;
+    transition: 0.3s, background-size 0.3s 0.3s;
+  }
+
+  .thick-2:hover {
+    --d: 100%;
+    background-position: 50% 0%;
+    color: #000 !important;
+    font-weight: bolder;
+    transition: 0.3s, background-position 0.3s 0.3s, color 0.3s 0.3s;
+  }
+
+  body {
+    padding-top: 137px;
+  }
+
+  .bs-callout {
+    font-size: 122px;
+
+    span {
+      font-size: 73px;
+    }
+  }
+
+  .home-carousel {
+    .carousel-item {
+      img {
+        height: 600px;
+      }
+    }
+  }
+
+  .transparent-section {
+
+    .custom-box-top {
+      max-width: 600px;
+
+      .grappling {        
+        font-size: 48px;
+      }
+
+      .circle {
+        font-size: 80px;
+      }
+
+    }
+
+    .custom-box {
+      max-width: 600px;
+
+    }
+
+  }
+
+  .stefan {
+    width: 100%;
+    max-width: 400px;
+  }
+
+}
+
+@media only screen and (min-width: 1400px) {
+  .home-carousel {
+    .carousel-item {
+      img {
+        height: 760px;
+      }
+    }
+  }
+}
