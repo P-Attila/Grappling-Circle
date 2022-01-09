@@ -18,7 +18,7 @@ let navLinks = document.querySelectorAll(".nav-link");
 let navbarNavDropdown = document.querySelector("#navbarNavDropdown");
 let navbarToggler = document.querySelector(".navbar-toggler");
 navLinks.forEach(navLink => {
-  navLink.addEventListener("click", function(){
+  navLink.addEventListener("click", function () {
     navbarNavDropdown.classList.remove("show");
     navbarToggler.classList.add("collapsd");
     navbarToggler.setAttribute("aria-expanded", false);
