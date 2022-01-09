@@ -41,6 +41,10 @@ h6 {
   letter-spacing: unset;
 }
 
+section {
+  scroll-margin-top: 56px;
+}
+
 /*----- Header -----*/
 .header {
   position: fixed;
@@ -185,6 +189,9 @@ h6 {
 
 .icon {
   width: 20px;
+  height: 25px;
+  position: relative;
+  top: 2px;
 }
 
 /*----- Footer -----*/
@@ -194,6 +201,9 @@ footer {
 
 /*----- Media Queries -----*/
 @media only screen and (min-width: 992px) {
+  section {
+    scroll-margin-top: 138px;
+  }
   .nav-link {
     padding: 4px 12px;
     margin: 0 8px;
