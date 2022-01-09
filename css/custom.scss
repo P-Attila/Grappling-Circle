@@ -145,7 +145,7 @@ section {
 
 .transparent-section {
 
-  .custom-box-top {    
+  .custom-box-top {
 
     .grappling {
       color: #fafafa;
@@ -170,7 +170,6 @@ section {
     color: #ffffff;
     font-size: 1.2rem;
   }
-
 }
 
 
@@ -209,10 +208,6 @@ section {
       text-decoration: underline;
     }
   }
-
-
-
-
 }
 
 .triangle-bottom {
@@ -227,12 +222,10 @@ section {
 
 .icon {
   width: 20px;
-  height: 25px; 
-  position: relative; 
+  height: 25px;
+  position: relative;
   top: 2px;
 }
-
-
 
 /*----- Footer -----*/
 
@@ -248,7 +241,6 @@ footer {
       text-decoration: underline;
     }
   }
-
 }
 
 /*----- Media Queries -----*/
@@ -258,7 +250,6 @@ footer {
   section {
     scroll-margin-top: 138px;
   }
-  
 
   .nav-link {
     padding: 4px 12px;
@@ -334,28 +325,25 @@ footer {
     .custom-box-top {
       max-width: 600px;
 
-      .grappling {        
+      .grappling {
         font-size: 48px;
       }
 
       .circle {
         font-size: 80px;
       }
-
     }
 
     .custom-box {
       max-width: 600px;
 
     }
-
   }
 
   .stefan {
     width: 100%;
     max-width: 400px;
   }
-
 }
 
 @media only screen and (min-width: 1400px) {
