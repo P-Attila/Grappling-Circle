@@ -142,6 +142,7 @@ section {
 
 .transparent-section .custom-box-top .circle {
   font-size: 50px;
+  color: #fcf700;
 }
 
 .transparent-section .custom-box {
@@ -177,6 +178,11 @@ section {
   color: #fafafa;
 }
 
+.grad-section a:hover {
+  color: #fcf700;
+  text-decoration: underline;
+}
+
 .triangle-bottom {
   position: relative;
   bottom: -1px;
@@ -197,6 +203,16 @@ section {
 /*----- Footer -----*/
 footer {
   background: #000;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+footer a:hover {
+  color: #fcf700;
+  text-decoration: underline;
 }
 
 /*----- Media Queries -----*/

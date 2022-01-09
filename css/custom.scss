@@ -154,6 +154,7 @@ section {
 
     .circle {
       font-size: 50px;
+      color: #fcf700;
     }
 
   }
@@ -202,6 +203,11 @@ section {
   a {
     text-decoration: none;
     color: #fafafa;
+
+    &:hover {
+      color: #fcf700;
+      text-decoration: underline;
+    }
   }
 
 
@@ -232,6 +238,16 @@ section {
 
 footer {
   background: #000;
+
+  a {
+    text-decoration: none;
+    color: #fafafa;
+
+    &:hover {
+      color: #fcf700;
+      text-decoration: underline;
+    }
+  }
 
 }
 
