@@ -147,8 +147,11 @@ section {
 
 .transparent-section .custom-box {
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#ef5241), to(#df2674));
-  background: linear-gradient(to right, #ef5241 0%, #df2674 100%);
+  /*background: -webkit-linear-gradient(left, #ef5241 0%, #df2674 100%);
+    background: linear-gradient(to right, #ef5241 0%, #df2674 100%);*/
+  background: #19a7fc;
+  background: -webkit-gradient(linear, left top, right top, from(#19a7fc), color-stop(26%, #4ea9aa), color-stop(71%, #86ab53), to(#b0ad12));
+  background: linear-gradient(90deg, #19a7fc 0%, #4ea9aa 26%, #86ab53 71%, #b0ad12 100%);
   padding: 20px;
 }
 
@@ -168,9 +171,25 @@ section {
 
 /*----- Gradiant Section -----*/
 .grad-section {
-  background: #fb6c43;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fb6c43), to(#fc136a));
-  background: linear-gradient(to bottom, #fb6c43 0%, #fc136a 100%);
+  /*background: #fb6c43;
+  background: -moz-linear-gradient(top, #fb6c43 0%, #fc136a 100%);
+  background: -webkit-gradient(linear,
+      left top,
+      left bottom,
+      color-stop(0%, #fb6c43),
+      color-stop(100%, #fc136a));
+  background: -webkit-linear-gradient(top, #fb6c43 0%, #fc136a 100%);
+  background: -o-linear-gradient(top, #fb6c43 0%, #fc136a 100%);
+  background: -ms-linear-gradient(top, #fb6c43 0%, #fc136a 100%);
+  background: linear-gradient(to bottom, #fb6c43 0%, #fc136a 100%);*/
+  /*background: -webkit-linear-gradient(left,#19d2b9 0%, #feff01 100%);
+    background: -moz-linear-gradient(left,#19d2b9 0%, #feff01 100%);
+    background: -ms-linear-gradient(left,#19d2b9 0%, #feff01 100%);
+    background: -o-linear-gradient(left,#19d2b9 0%, #feff01 100%);
+    background: linear-gradient(left,#19d2b9 0%, #feff01 100%);*/
+  background: #19a7fc;
+  background: -webkit-gradient(linear, left top, right top, from(#19a7fc), color-stop(26%, #4ea9aa), color-stop(71%, #86ab53), to(#b0ad12));
+  background: linear-gradient(90deg, #19a7fc 0%, #4ea9aa 26%, #86ab53 71%, #b0ad12 100%);
 }
 
 .grad-section a {

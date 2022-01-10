@@ -161,8 +161,11 @@ section {
 
   .custom-box {
     width: 100%;
-    background: -webkit-linear-gradient(left, #ef5241 0%, #df2674 100%);
-    background: linear-gradient(to right, #ef5241 0%, #df2674 100%);
+    /*background: -webkit-linear-gradient(left, #ef5241 0%, #df2674 100%);
+    background: linear-gradient(to right, #ef5241 0%, #df2674 100%);*/
+    background: rgb(25, 167, 252);
+    background: linear-gradient(90deg, rgba(25, 167, 252, 1) 0%, rgba(78, 169, 170, 1) 26%, rgba(134, 171, 83, 1) 71%, rgba(176, 173, 18, 1) 100%);
+
     padding: 20px;
   }
 
@@ -187,7 +190,7 @@ section {
 /*----- Gradiant Section -----*/
 
 .grad-section {
-  background: #fb6c43;
+  /*background: #fb6c43;
   background: -moz-linear-gradient(top, #fb6c43 0%, #fc136a 100%);
   background: -webkit-gradient(linear,
       left top,
@@ -197,7 +200,16 @@ section {
   background: -webkit-linear-gradient(top, #fb6c43 0%, #fc136a 100%);
   background: -o-linear-gradient(top, #fb6c43 0%, #fc136a 100%);
   background: -ms-linear-gradient(top, #fb6c43 0%, #fc136a 100%);
-  background: linear-gradient(to bottom, #fb6c43 0%, #fc136a 100%);
+  background: linear-gradient(to bottom, #fb6c43 0%, #fc136a 100%);*/
+
+  /*background: -webkit-linear-gradient(left,#19d2b9 0%, #feff01 100%);
+    background: -moz-linear-gradient(left,#19d2b9 0%, #feff01 100%);
+    background: -ms-linear-gradient(left,#19d2b9 0%, #feff01 100%);
+    background: -o-linear-gradient(left,#19d2b9 0%, #feff01 100%);
+    background: linear-gradient(left,#19d2b9 0%, #feff01 100%);*/
+
+  background: rgb(25, 167, 252);
+  background: linear-gradient(90deg, rgba(25, 167, 252, 1) 0%, rgba(78, 169, 170, 1) 26%, rgba(134, 171, 83, 1) 71%, rgba(176, 173, 18, 1) 100%);
 
   a {
     text-decoration: none;
