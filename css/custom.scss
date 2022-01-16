@@ -255,6 +255,7 @@ section {
     width: 100%;
     background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
     padding: 20px;
+    height: 100%;
   }
 
   .ts-text {
@@ -284,14 +285,12 @@ section {
   }
 }
 
-/*----- Second Black Section -----*/
+/*----- Gym Carousel -----*/
 
-.second-black-section {
-  background: black;
-
-  .stefan-strong {
-    font-size: 36px;
-  }
+.owl-carousel img {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /*----- Gradiant Section -----*/
@@ -307,7 +306,7 @@ section {
       color: #fcf700;
       text-decoration: underline;
     }
-  }
+  }  
 }
 
 .triangle-bottom {
@@ -326,6 +325,24 @@ section {
   position: relative;
   top: 2px;
 }
+
+/*----- Second Black Section -----*/
+
+.second-black-section {
+  background: black;
+
+  .stefan-strong {
+    font-size: 36px;
+  }
+
+  .vitadrom {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+  }
+}
+
 
 /*----- Footer -----*/
 

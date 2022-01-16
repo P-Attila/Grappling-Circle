@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/custom.css" />
     <title>Grappling-circle</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/custom.css" />
 </head>
 
 <body>
@@ -29,19 +31,19 @@
                             <a class="nav-link thick-2" href="#Jiu-Jitsu">Jiu-Jitsu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link thick-2" href="#Gym">Gym</a>
+                            <a class="nav-link thick-2" href="#Trainer">Trainer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link thick-2" href="#Trainer">Trainer</a>
+                            <a class="nav-link thick-2" href="#Gym">Gym</a>
                         </li>
                         <li class="d-none d-lg-block">
                             <a href="#"><img class="logo-desktop" src="img/logo-white.svg" alt="Grappling-circle" /></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link thick-2" href="#Probetraining">Probetraining</a>
+                            <a class="nav-link thick-2" href="#Stundenplan">Stundenplan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link thick-2" href="#Stundenplan">Stundenplan</a>
+                            <a class="nav-link thick-2" href="#Stundenplan">Preise</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link thick-2" href="#kontakt">Kontakt</a>
@@ -51,6 +53,8 @@
             </div>
         </nav>
     </header>
+
+    <!-- Carousel -->
 
     <main>
         <div id="carousel" class="carousel home-carousel slide" data-bs-ride="carousel">
@@ -68,8 +72,9 @@
             <img src="img/triangle-bottom.svg" alt="" class="triangle-bottom" />
         </div>
 
-        <section class="black-section">
-            <img src="img/triangle-top.svg" class="triangle-top" alt="" />
+        <!-- Jiu-Jitsu -->
+
+        <section class="black-section" id="Jiu-Jitsu">
             <div class="container py-5 d-lg-none">
                 <div class="row">
                     <div class="col-auto mx-auto">
@@ -77,14 +82,13 @@
                     </div>
                 </div>
             </div>
+            
 
-            <!-- Jiu-Jitsu -->
-
-            <div class="container py-5" id="Jiu-Jitsu">
+            <div class="container py-5">
                 <div class="row">
                     <div class="col">
                         <h1 class="bs-callout mb-5">
-                            <span>Das</span><br />TRAINING</h1>
+                            <span>Jiu-Jitsu</span><br />Das TRAINING</h1>
                         <p class="bs-text">
                             Im Allgemeinen beginnen wir das Training mit einer kurzen Erwärmung, gefolgt von
                             einfachen Drills und Partnerübungen, die auf die Techniken des Tages
@@ -105,27 +109,35 @@
             </div>
         </section>
 
-        <!-- Gym -->
+        <!-- Trainer -->
 
-        <section class="transparent-section" id="Gym">
+        <section class="transparent-section" id="Trainer">
             <img src="img/triangle-top.svg" class="triangle-top" alt="" />
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-lg-6 ms-auto">
+                    <div class="col-md-8 col-lg-5 mx-auto mb-5 mb-lg-0">
                         <div class="custom-box">
                             <div class="custom-box-top">
-                                <h2 class="grappling">GRAPPLING<br />
-                                    <span class="circle">CIRCLE</span></h2>
+                                <h2 class="grappling">Gerd<br />
+                                    <span class="circle">Göbl</span></h2>
                             </div>
-                            <p class="ts-text mb-0">
-                                Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee
-                                Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil.<br /><br />
-                                Measi a ganze es i mog
-                                di fei aasgem, Blosmusi.<br /><br />
-                                Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl
-                                wos, imma hogg di hera Guglhupf!<br /><br />
+                            <img src="img/img neu/trainer1.PNG" class="w-75 mx-auto" alt="">
+                            <p class="ts-text mb-0 mt-4">
                                 Schorsch Spotzerl schnacksln Weiznglasl vui
                                 gschmeidig a ganze auf der Oim, da gibt's koa Sünd, etza!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-lg-5 mx-auto">
+                        <div class="custom-box">
+                            <div class="custom-box-top">
+                                <h2 class="grappling">Marcel<br />
+                                    <span class="circle">Polk</span></h2>
+                            </div>
+                            <img src="img/img neu/trainer2.PNG" class="w-75 mx-auto" alt="">
+                            <p class="ts-text mb-0 mt-4">
+                                Bavaria Radler Schneid vui huift vui ognudelt i mechad dee
+                                Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil.
                             </p>
                         </div>
                     </div>
@@ -136,14 +148,34 @@
 
         <div class="black-stripe bg-black py-4"></div>
 
-        <!-- Trainingszeiten -->
+        <!-- Gym -->
 
-        <section class="grad-section" id="Stundenplan">
+        <section class="grad-section" id="Gym">
             <img src="img/triangle-top.svg" class="triangle-top" alt="" />
             <div class="container py-5">
-                <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div> <img src="img/img neu/gym1.jpg" alt=""> </div>
+                    <div> <img src="img/img neu/gym2.jpg" alt=""> </div>
+                    <div> <img src="img/img neu/gym3.jpg" alt=""> </div>
+                    <div> <img src="img/img neu/gym4.jpg" alt=""> </div>
+                    <div> <img src="img/img neu/gym5.jpg" alt=""> </div>
+                    <div> <img src="img/img neu/gym6.jpg" alt=""> </div>
+                    <div> <img src="img/img neu/gym7.jpg" alt=""> </div>
+                    <div> <img src="img/img neu/gym8.jpg" alt=""> </div>
+                    <div> <img src="img/img neu/gym9.jpg" alt=""> </div>
+                    <div> <img src="img/img neu/gym10.jpg" alt=""> </div>
+                </div>
+            </div>
+            <img src="img/triangle-bottom.svg" alt="" class="triangle-bottom" />
+        </section>
+
+        <!-- Stundenplan -->
+
+        <section class="second-black-section" id="Stundenplan">
+            <div class="container py-5">
+                <div class="row align-items-center justify-content-between">
                     <div class="col-lg-6 mb-5 mb-lg-0">
-                        <h2>Trainingszeiten</h2><br />
+                        <h2>Trainingszeiten:</h2><br />
                         <p>
                             Montag:<br />
                             19:00 - 21:00<br /><br />
@@ -151,44 +183,21 @@
                             19:00 - 21:00<br /><br />
                             Samstag:<br />
                             17:00 - 19:00
-                        </p>
+                        </p><br />
+                        <h3>Mitgliedsbeitrag:</h3>
+                        <p>Monatlich: 30€</p>
                     </div>
                     <div class="col-lg-6 ">
+                        <h2>Öffnungszeiten Vitadrom:</h2><br />
                         <p>
-                            Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee
-                            Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil.<br /><br />
-                            Measi a ganze es i mog
-                            di fei aasgem, Blosmusi.<br /><br />
-                            Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl
-                            wos, imma hogg di hera Guglhupf!<br /><br />
-                            Schorsch Spotzerl schnacksln Weiznglasl vui
-                            gschmeidig a ganze auf der Oim, da gibt's koa Sünd, etza!
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <img src="img/triangle-bottom.svg" alt="" class="triangle-bottom" />
-        </section>
-
-        <!-- Trainer -->
-
-        <section class="second-black-section" id="Trainer">
-            <div class="container py-5">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-lg-6 order-lg-2 mb-4">
-                        <img class="rounded-3" src="img/stefan.jpg" alt="" />
-                    </div>
-                    <div class="col-lg-5 order-lg-1">
-                        <p class="bs-text">
-                            <span class="stefan-strong">STEFAN</span>
-                            Bavaria ipsum dolor sit amet Radler Schneid vui huift vui ognudelt i mechad dee
-                            Schwoanshaxn Zwedschgndadschi a bissal wos gehd ollaweil.<br /><br />
-                            Measi a ganze es i mog
-                            di fei aasgem, Blosmusi.<br /><br />
-                            Schmankal zwoa Ramasuri Edlweiss. Wia vo de Weiznglasl
-                            wos, imma hogg di hera Guglhupf!<br /><br />
-                            Schorsch Spotzerl schnacksln Weiznglasl vui
-                            gschmeidig a ganze auf der Oim, da gibt's koa Sünd, etza!
+                            Montag - Freitag:<br />
+                            8:00 - 22:00<br /><br />
+                            Samstag, Sonntag und Feiertage:<br />
+                            8:00 - 20:00
+                            <a href="https://www.vitadrom-straubing.de/" target="_blank"><img src="img/vitadrom.png"
+                                    alt="" class="vitadrom"></a><br />
+                            <h3>Mitgliedsbeitrag:</h3>
+                            <p>Monatlich: 15€</p>
                         </p>
                     </div>
                 </div>
@@ -210,7 +219,7 @@
                             href="https://www.instagram.com/grapplingcircle/" target="_blank"><img class="icon me-3"
                                 src="img/instagram.svg" alt="" />Instagram</a><br />
                         <a class="d-inline-flex align-items-start  mb-3" href="tel:+4915167851745"><img
-                                class="icon me-3" src="img/phone.svg" alt="handy">+49
+                                class="icon me-3" src="img/whatsapp.svg" alt="handy">+49
                             15167851745</a><br />
                         <a class="d-inline-flex align-items-start  mb-4" href="mailto:info@grappling-circle.com"><img
                                 class="icon me-3" src="img/letter.svg" alt="email">info@grappling-circle.com</a><br />
@@ -260,6 +269,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

@@ -24,3 +24,25 @@ navLinks.forEach(navLink => {
     navbarToggler.setAttribute("aria-expanded", false);
   })
 })
+
+
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  margin: 10,
+  responsiveClass: true,
+  dots: false,
+  nav: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 2,
+    },
+    992: {
+      items: 3,
+      nav: true,
+      dots: true,
+    }
+  }
+})
