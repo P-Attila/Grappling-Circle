@@ -137,13 +137,13 @@ section {
   .navbar-collapse {
     padding: 0;
   }
-  .thick-2 {
+  .nav-link {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fcf700)) 50% calc(-3px - 100%)/var(--d, 0%) 200% no-repeat;
     background: linear-gradient(#fcf700 0 0) 50% calc(-3px - 100%)/var(--d, 0%) 200% no-repeat;
     -webkit-transition: 0.3s, background-size 0.3s 0.3s;
     transition: 0.3s, background-size 0.3s 0.3s;
   }
-  .thick-2:hover {
+  .nav-link:hover {
     --d: 100%;
     background-position: 50% 0%;
     color: #000 !important;
@@ -215,14 +215,23 @@ section {
 }
 
 /*----- Transparent Section -----*/
-.transparent-section .custom-box-top .grappling {
-  color: #fafafa;
-  font-size: 36px;
+.transparent-section .custom-box-top {
+  position: relative;
+  margin-bottom: 71px;
 }
 
-.transparent-section .custom-box-top .circle {
+.transparent-section .custom-box-top .vorname {
+  position: absolute;
+  color: #fafafa;
+  font-size: 36px;
+  line-height: 1;
+  bottom: -57px;
+}
+
+.transparent-section .custom-box-top .nachname {
   font-size: 50px;
   color: #fcf700;
+  margin-left: 27px;
 }
 
 .transparent-section .custom-box {
@@ -230,6 +239,10 @@ section {
   background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
   padding: 20px;
   height: 100%;
+}
+
+.transparent-section .custom-box.custom-box-left {
+  background-image: linear-gradient(-150deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
 }
 
 .transparent-section .ts-text {
@@ -240,12 +253,17 @@ section {
 @media only screen and (min-width: 992px) {
   .transparent-section .custom-box-top {
     max-width: 600px;
+    margin-bottom: 100px;
   }
-  .transparent-section .custom-box-top .grappling {
+  .transparent-section .custom-box-top .vorname {
     font-size: 48px;
+    bottom: -87px;
+    text-shadow: 2px 2px 4px black;
   }
-  .transparent-section .custom-box-top .circle {
+  .transparent-section .custom-box-top .nachname {
     font-size: 80px;
+    margin-left: 36px;
+    text-shadow: none;
   }
   .transparent-section .custom-box {
     max-width: 600px;
