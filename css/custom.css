@@ -185,7 +185,7 @@ section {
   }
 }
 
-/*----- Black Section -----*/
+/*----- Jiu-Jitsu / Stundenplan -----*/
 .black-section {
   background: black;
 }
@@ -214,7 +214,12 @@ section {
   }
 }
 
-/*----- Transparent Section -----*/
+/*----- Trainer -----*/
+.transparent-section .trainer-title {
+  text-align: center;
+  font-size: 60px;
+}
+
 .transparent-section .custom-box-top {
   position: relative;
   margin-bottom: 71px;
@@ -226,12 +231,14 @@ section {
   font-size: 36px;
   line-height: 1;
   bottom: -57px;
+  text-shadow: 2px 2px 4px black;
 }
 
 .transparent-section .custom-box-top .nachname {
   font-size: 50px;
   color: #fcf700;
   margin-left: 27px;
+  text-shadow: none;
 }
 
 .transparent-section .custom-box {
@@ -258,12 +265,10 @@ section {
   .transparent-section .custom-box-top .vorname {
     font-size: 48px;
     bottom: -87px;
-    text-shadow: 2px 2px 4px black;
   }
   .transparent-section .custom-box-top .nachname {
     font-size: 80px;
     margin-left: 36px;
-    text-shadow: none;
   }
   .transparent-section .custom-box {
     max-width: 600px;
@@ -279,9 +284,14 @@ section {
      object-position: center;
 }
 
-/*----- Gradiant Section -----*/
+/*----- Gym / Kontakt -----*/
 .grad-section {
   background-image: linear-gradient(115deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+}
+
+.grad-section .gym-title {
+  text-align: center;
+  font-size: 60px;
 }
 
 .grad-section a {
@@ -316,15 +326,18 @@ section {
   background: black;
 }
 
-.second-black-section .stefan-strong {
-  font-size: 36px;
-}
-
-.second-black-section .vitadrom {
-  max-width: 250px;
-  width: 100%;
+.second-black-section a {
+  display: block;
+  width: 150px;
+  max-width: 100%;
   height: auto;
   margin-top: 3rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .second-black-section a {
+    width: 250px;
+  }
 }
 
 /*----- Footer -----*/
