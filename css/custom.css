@@ -208,10 +208,6 @@ section {
   .bs-callout span {
     font-size: 73px;
   }
-  .stefan {
-    width: 100%;
-    max-width: 400px;
-  }
 }
 
 /*----- Trainer -----*/
@@ -231,7 +227,7 @@ section {
   font-size: 36px;
   line-height: 1;
   bottom: -57px;
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .transparent-section .custom-box-top .nachname {
