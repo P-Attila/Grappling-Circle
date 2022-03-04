@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
 body {
-  background: black;
+  background: #040404;
   font-family: 'Ubuntu Mono', monospace;
   letter-spacing: 1.4px;
   color: #fafafa;
@@ -18,8 +18,8 @@ body .body-matte {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: grayscale(70%) contrast(60%);
-          filter: grayscale(70%) contrast(60%);
+  -webkit-filter: grayscale(70%) contrast(80%);
+          filter: grayscale(70%) contrast(80%);
 }
 
 img {
@@ -187,7 +187,7 @@ section {
 
 /*----- Jiu-Jitsu / Stundenplan -----*/
 .black-section {
-  background: black;
+  background: #040404;
 }
 
 .bs-callout {
@@ -214,6 +214,7 @@ section {
 .transparent-section .trainer-title {
   text-align: center;
   font-size: 60px;
+  margin-top: 100px;
 }
 
 .transparent-section .custom-box-top {
@@ -239,13 +240,8 @@ section {
 
 .transparent-section .custom-box {
   width: 100%;
-  background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
   padding: 20px;
   height: 100%;
-}
-
-.transparent-section .custom-box.custom-box-left {
-  background-image: linear-gradient(-150deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
 }
 
 .transparent-section .ts-text {
@@ -281,10 +277,6 @@ section {
 }
 
 /*----- Gym / Kontakt -----*/
-.grad-section {
-  background-image: linear-gradient(115deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
-}
-
 .grad-section .gym-title {
   text-align: center;
   font-size: 60px;
@@ -319,7 +311,7 @@ section {
 
 /*----- Second Black Section -----*/
 .second-black-section {
-  background: black;
+  background: #040404;
 }
 
 .second-black-section a {
@@ -341,13 +333,22 @@ footer {
   background: #000;
 }
 
-footer a {
+footer .btn-footer {
   text-decoration: none;
   color: #fafafa;
+  background: none;
+  border: none;
+  font-family: 'Ubuntu Mono', monospace;
+  letter-spacing: 1.4px;
+  color: #fafafa;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2em;
 }
 
-footer a:hover {
+footer .btn-footer:hover {
   color: #fcf700;
   text-decoration: underline;
+  background: none;
 }
 /*# sourceMappingURL=custom.css.map */

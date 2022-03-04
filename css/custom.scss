@@ -3,7 +3,7 @@
 
 
 body {
-  background: rgb(0, 0, 0);
+  background: #040404;
   font-family: 'Ubuntu Mono', monospace;
   letter-spacing: 1.4px;
   color: #fafafa;
@@ -18,7 +18,7 @@ body {
     height: 100vh;
     width: 100%;
     object-fit: cover;
-    filter: grayscale(70%) contrast(60%);
+    filter: grayscale(70%) contrast(80%);
   }
 }
 
@@ -207,7 +207,7 @@ section {
 /*----- Jiu-Jitsu / Stundenplan -----*/
 
 .black-section {
-  background: black;
+  background: #040404;
 }
 
 .bs-callout {
@@ -228,7 +228,7 @@ section {
     span {
       font-size: 73px;
     }
-  }  
+  }
 }
 
 /*----- Trainer -----*/
@@ -238,6 +238,7 @@ section {
   .trainer-title {
     text-align: center;
     font-size: 60px;
+    margin-top: 100px;
   }
 
   .custom-box-top {
@@ -263,13 +264,8 @@ section {
 
   .custom-box {
     width: 100%;
-    background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
     padding: 20px;
     height: 100%;
-
-    &.custom-box-left {
-      background-image: linear-gradient(-150deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
-    }
   }
 
   .ts-text {
@@ -313,7 +309,6 @@ section {
 /*----- Gym / Kontakt -----*/
 
 .grad-section {
-  background-image: linear-gradient(115deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
 
   .gym-title {
     text-align: center;
@@ -351,7 +346,7 @@ section {
 /*----- Second Black Section -----*/
 
 .second-black-section {
-  background: black;
+  background: #040404;
   a {
     display: block;
     width: 150px;
@@ -374,13 +369,22 @@ section {
 footer {
   background: #000;
 
-  a {
+  .btn-footer {
     text-decoration: none;
     color: #fafafa;
+    background: none;
+    border: none;
+    font-family: 'Ubuntu Mono', monospace;
+    letter-spacing: 1.4px;
+    color: #fafafa;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.2em;
 
     &:hover {
       color: #fcf700;
       text-decoration: underline;
+      background: none;
     }
   }
 }
