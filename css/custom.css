@@ -340,7 +340,6 @@ footer .btn-footer {
   border: none;
   font-family: 'Ubuntu Mono', monospace;
   letter-spacing: 1.4px;
-  color: #fafafa;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.2em;
@@ -350,5 +349,18 @@ footer .btn-footer:hover {
   color: #fcf700;
   text-decoration: underline;
   background: none;
+}
+
+/*----- Modal -----*/
+modal-body {
+  text-decoration: none;
+  color: white;
+  background: none;
+  border: none;
+  font-family: 'Ubuntu Mono', monospace;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2em;
 }
 /*# sourceMappingURL=custom.css.map */

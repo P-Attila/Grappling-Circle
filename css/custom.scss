@@ -251,7 +251,7 @@ section {
       font-size: 36px;
       line-height: 1;
       bottom: -57px;
-      text-shadow: 2px 2px 8px rgba(0,0,0,.5);
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
     }
 
     .nachname {
@@ -347,6 +347,7 @@ section {
 
 .second-black-section {
   background: #040404;
+
   a {
     display: block;
     width: 150px;
@@ -376,7 +377,6 @@ footer {
     border: none;
     font-family: 'Ubuntu Mono', monospace;
     letter-spacing: 1.4px;
-    color: #fafafa;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 1.2em;
@@ -387,4 +387,18 @@ footer {
       background: none;
     }
   }
+}
+
+/*----- Modal -----*/
+
+modal-body {
+  text-decoration: none;
+  color: white;
+  background: none;
+  border: none;
+  font-family: 'Ubuntu Mono', monospace;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2em;
 }
