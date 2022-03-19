@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   scroll-behavior: smooth;
   background: #040404;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: "Ubuntu Mono", monospace;
   letter-spacing: 1.4px;
   color: #fafafa;
   font-weight: 400;
@@ -167,6 +169,21 @@ section {
 
 /*----- Main Page Carousel -----*/
 
+body {
+    animation: fadeIn linear 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .home-carousel {
   position: relative;
 
@@ -236,7 +253,6 @@ section {
 /*----- Trainer -----*/
 
 .transparent-section {
-
   .trainer-title {
     text-align: center;
     font-size: 60px;
@@ -253,7 +269,7 @@ section {
       font-size: 36px;
       line-height: 1;
       bottom: -57px;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     }
 
     .nachname {
@@ -278,7 +294,6 @@ section {
 
 @media only screen and (min-width: 992px) {
   .transparent-section {
-
     .custom-box-top {
       max-width: 600px;
       margin-bottom: 100px;
@@ -311,7 +326,6 @@ section {
 /*----- Gym / Kontakt -----*/
 
 .grad-section {
-
   .gym-title {
     text-align: center;
     font-size: 60px;
@@ -327,7 +341,6 @@ section {
     }
   }
 }
-
 
 .icon {
   width: 20px;
@@ -368,7 +381,7 @@ footer {
     color: #fafafa;
     background: none;
     border: none;
-    font-family: 'Ubuntu Mono', monospace;
+    font-family: "Ubuntu Mono", monospace;
     letter-spacing: 1.4px;
     font-weight: 400;
     font-size: 1.5rem;
@@ -389,9 +402,13 @@ modal-body {
   color: white;
   background: none;
   border: none;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: "Ubuntu Mono", monospace;
   letter-spacing: 1.4px;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.2em;
+}
+
+.modal-header .btn-close {
+  opacity: 1;
 }
