@@ -340,6 +340,10 @@ body {
   margin-top: 3rem;
 }
 
+#preise {
+  scroll-margin-top: 150px;
+}
+
 @media only screen and (min-width: 992px) {
   .second-black-section a {
     width: 250px;
