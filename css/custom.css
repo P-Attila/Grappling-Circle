@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   scroll-behavior: smooth;
   background: #040404;
@@ -14,6 +10,8 @@ body {
   font-size: 1.5rem;
   line-height: 1.2em;
   padding-top: 56px;
+  -webkit-animation: fadeIn linear 3s;
+          animation: fadeIn linear 3s;
 }
 
 body .body-matte {
@@ -25,6 +23,24 @@ body .body-matte {
      object-fit: cover;
   -webkit-filter: grayscale(70%) contrast(80%);
           filter: grayscale(70%) contrast(80%);
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 img {
@@ -158,29 +174,6 @@ section {
 }
 
 /*----- Main Page Carousel -----*/
-body {
-  -webkit-animation: fadeIn linear 3s;
-          animation: fadeIn linear 3s;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .home-carousel {
   position: relative;
 }

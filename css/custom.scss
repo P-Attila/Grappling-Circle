@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
 
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   scroll-behavior: smooth;
@@ -15,8 +12,9 @@ body {
   font-size: 1.5rem;
   line-height: 1.2em;
   padding-top: 56px;
+  animation: fadeIn linear 3s;
 
-  .body-matte {
+    .body-matte {
     position: fixed;
     z-index: -1;
     height: 100vh;
@@ -24,6 +22,16 @@ body {
     object-fit: cover;
     filter: grayscale(70%) contrast(80%);
   }
+}
+
+@keyframes fadeIn {
+0% {
+  opacity: 0;
+}
+
+100% {
+  opacity: 1;
+}
 }
 
 img {
@@ -169,19 +177,6 @@ section {
 
 /*----- Main Page Carousel -----*/
 
-body {
-    animation: fadeIn linear 3s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 
 .home-carousel {
